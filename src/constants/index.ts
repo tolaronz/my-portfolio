@@ -24,7 +24,6 @@ import {
   git,
   figma,
   docker,
-  meta,
   starbucks,
   tesla,
   shopify,
@@ -51,19 +50,19 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "Django/Python Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Backend API Engineer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Automation & Data Pipelines",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Cloud & DevOps",
     icon: creator,
   },
 ];
@@ -125,55 +124,41 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
+    title: "Senior Django/Python Developer",
+    companyName: "LoneStar Tech",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "6+ years experience",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Maintained high-traffic Django/DRF systems for 10k+ daily users.",
+      "Built Celery/Redis workflows, improving data processing speed by 40%.",
+      "Developed ML-driven fraud detection, blocking 500+ fraudulent transactions.",
+      "Optimized PostgreSQL schemas and queries, boosting performance by 35%.",
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
+    title: "Django Backend Engineer",
+    companyName: "RedRiver Solutions",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "6+ years experience",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built scalable REST APIs for 50k+ users using Django/DRF + PostgreSQL.",
+      "Improved API performance by 45% with Redis caching.",
+      "Implemented JWT/OAuth2 authentication with role-based access.",
+      "Migrated legacy PHP systems to Django microservices, reducing errors by 35%.",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
+    title: "Python Developer",
+    companyName: "Gulf Coast Labs",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "6+ years experience",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Automated pipelines, cutting manual work 60% and enhancing accuracy.",
+      "Built internal dashboards and analytics with Django for real-time reporting.",
+      "Created REST APIs and integrated services, increasing efficiency by 30%.",
     ],
   },
 ];
