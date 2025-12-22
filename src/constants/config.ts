@@ -40,13 +40,16 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Michaels — Django/Python Developer",
-    fullName: "John Michaels",
-    email: "j08454866@gmail.com",
+    title: "Justin Matthew Hodges — Senior Software Engineer",
+    fullName: "Justin Matthew Hodges",
+    email: "justinmatthewhodges@gmail.com",
   },
   hero: {
-    name: "John Michaels",
-    p: ["I build scalable Django/DRF", "backends, automation, and APIs"],
+    name: "Justin Matthew Hodges",
+    p: [
+      "Senior software engineer focused on backend systems",
+      "Python, Django, FastAPI, and cloud deployments",
+    ],
   },
   contact: {
     p: "Get in touch",
@@ -67,10 +70,12 @@ export const config: TConfig = {
     about: {
       p: "Profile",
       h2: "Summary.",
-      content: `Django/Python developer with 6+ years of experience building scalable
-      backend systems. Skilled in Django, DRF, Celery, PostgreSQL, Redis,
-      Docker, and AWS. Experienced in REST APIs, automation workflows,
-      data pipelines, and AI/LLM integrations.`,
+      content: `Senior software engineer specializing in backend development and scalable
+      web applications, with 10 years of experience building high-performance
+      systems using Python, Django, FastAPI, and modern JavaScript/TypeScript.
+      Experienced in API architecture, cloud deployments, asynchronous
+      processing, database design, and CI/CD automation. Committed to clean
+      architecture, performance optimization, and reliable delivery.`,
     },
     experience: {
       p: "Professional background",

@@ -15,13 +15,16 @@ const INITIAL_STATE = Object.fromEntries(
 const emailjsConfig = {
   serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
   templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-  accessToken: import.meta.env.VITE_EMAILJS_ACCESS_TOKEN,
+  accessToken:
+    import.meta.env.VITE_EMAILJS_ACCESS_TOKEN ??
+    import.meta.env.VITE_EMAIL_JS_ACCESS_TOKEN,
 };
 
 const Contact = () => {
   const formRef = useRef<React.LegacyRef<HTMLFormElement> | undefined>();
   const [form, setForm] = useState(INITIAL_STATE);
   const [loading, setLoading] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> | undefined
@@ -35,6 +38,18 @@ const Contact = () => {
     if (e === undefined) return;
     e.preventDefault();
     setLoading(true);
+
+    if (
+      !emailjsConfig.serviceId ||
+      !emailjsConfig.templateId ||
+      !emailjsConfig.accessToken
+    ) {
+      setLoading(false);
+      alert(
+        "Email service is not configured. Please set EmailJS environment variables."
+      );
+      return;
+    }
 
     emailjs
       .send(
@@ -52,7 +67,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          setShowSuccess(true);
 
           setForm(INITIAL_STATE);
         },
@@ -116,6 +131,40 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+
+      {showSuccess && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center px-6">
+          <div
+            className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+            onClick={() => setShowSuccess(false)}
+          />
+          <div className="relative w-full max-w-lg rounded-3xl border border-[#E6C77D]/40 bg-[#0E0B14] p-8 text-white shadow-[0_20px_80px_-20px_rgba(0,0,0,0.8)]">
+            <div className="mb-6">
+              <p className="text-[13px] uppercase tracking-[0.3em] text-[#E6C77D]">
+                Message Sent
+              </p>
+              <h3 className="mt-3 text-3xl font-semibold text-[#F7E7B3]">
+                Thank you for reaching out.
+              </h3>
+              <p className="text-secondary mt-4 leading-relaxed">
+                Your message has been delivered. I will get back to you shortly
+                with a thoughtful response.
+              </p>
+            </div>
+            <div className="flex items-center justify-end gap-3">
+              <button
+                type="button"
+                onClick={() => setShowSuccess(false)}
+                className="rounded-full border border-[#E6C77D]/40 px-5 py-2 text-sm font-semibold uppercase tracking-wide text-[#F7E7B3] transition hover:border-[#F7E7B3] hover:text-white"
+              >
+                Close
+              </button>
+            </div>
+            <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#E6C77D]/20 blur-3xl" />
+            <div className="pointer-events-none absolute -bottom-12 -left-8 h-36 w-36 rounded-full bg-[#9C5BFF]/20 blur-3xl" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

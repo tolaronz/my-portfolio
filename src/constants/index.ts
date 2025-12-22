@@ -14,15 +14,16 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
+  django,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
+  python,
+  fastapi,
+  postgres,
+  aws,
   git,
-  figma,
   docker,
   starbucks,
   tesla,
@@ -30,7 +31,6 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -69,12 +69,28 @@ const services: TService[] = [
 
 const technologies: TTechnology[] = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Python",
+    icon: python,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Django",
+    icon: django,
+  },
+  {
+    name: "FastAPI",
+    icon: fastapi,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgres,
+  },
+  {
+    name: "AWS",
+    icon: aws,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
   },
   {
     name: "JavaScript",
@@ -89,32 +105,12 @@ const technologies: TTechnology[] = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "docker",
@@ -124,29 +120,33 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: "Senior Django/Python Developer",
+    title: "Senior Python Developer (Django & FastAPI)",
     companyName: "LoneStar Tech",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "6+ years experience",
+    date: "09/2022 - 04/2025",
     points: [
-      "Maintained high-traffic Django/DRF systems for 10k+ daily users.",
-      "Built Celery/Redis workflows, improving data processing speed by 40%.",
-      "Developed ML-driven fraud detection, blocking 500+ fraudulent transactions.",
-      "Optimized PostgreSQL schemas and queries, boosting performance by 35%.",
+      "Led backend engineering with Django, DRF, Celery, and PostgreSQL for enterprise systems.",
+      "Introduced FastAPI microservices, reducing API latency by 50%.",
+      "Designed modular architectures and reusable components across projects.",
+      "Implemented OAuth2, RBAC, and secure API gateways.",
+      "Optimized query performance with indexing and caching via Redis and Memcached.",
+      "Migrated on-prem systems to AWS with Dockerized, resilient deployments.",
+      "Mentored junior developers and established coding standards.",
     ],
   },
   {
-    title: "Django Backend Engineer",
+    title: "Full-Stack Web Developer (Python & JavaScript)",
     companyName: "RedRiver Solutions",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "6+ years experience",
+    date: "07/2020 - 03/2022",
     points: [
-      "Built scalable REST APIs for 50k+ users using Django/DRF + PostgreSQL.",
-      "Improved API performance by 45% with Redis caching.",
-      "Implemented JWT/OAuth2 authentication with role-based access.",
-      "Migrated legacy PHP systems to Django microservices, reducing errors by 35%.",
+      "Built scalable REST APIs using Django/DRF for 50k+ users.",
+      "Implemented JWT/OAuth2 authentication with role-based access control.",
+      "Improved API performance using Redis caching and database optimization.",
+      "Migrated legacy systems to Django microservices.",
+      "Collaborated cross-functionally in code reviews and sprint planning.",
     ],
   },
   {
@@ -154,11 +154,12 @@ const experiences: TExperience[] = [
     companyName: "Gulf Coast Labs",
     icon: shopify,
     iconBg: "#383E56",
-    date: "6+ years experience",
+    date: "06/2018 - 11/2019",
     points: [
-      "Automated pipelines, cutting manual work 60% and enhancing accuracy.",
-      "Built internal dashboards and analytics with Django for real-time reporting.",
-      "Created REST APIs and integrated services, increasing efficiency by 30%.",
+      "Automated internal workflows, reducing manual effort by 60%.",
+      "Built Django dashboards and APIs for analytics and reporting.",
+      "Integrated third-party services and internal application components.",
+      "Improved operational efficiency through backend automation.",
     ],
   },
 ];
@@ -239,11 +240,11 @@ const projects: TProject[] = [
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "django",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "postgresql",
         color: "green-text-gradient",
       },
       {
