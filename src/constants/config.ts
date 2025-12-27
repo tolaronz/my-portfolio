@@ -74,9 +74,7 @@ export const config: TConfig = {
       experience in Python backend development using Django, Flask, and
       FastAPI. Builds REST APIs, microservices, and scalable systems on AWS with
       Docker, Kubernetes, Nginx, and CI/CD automation. Experienced in Celery
-      async processing, React/Node.js integration, and mentoring engineers.
-      Education: Bachelor's degree in Information Technology, National
-      University of Singapore (2015-2019).`,
+      async processing, React/Node.js integration, and mentoring engineers.`,
     },
     experience: {
       p: "Professional background",

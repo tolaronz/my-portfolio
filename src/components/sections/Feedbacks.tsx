@@ -45,6 +45,10 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
 );
 
 const Feedbacks = () => {
+  if (testimonials.length === 0) {
+    return null;
+  }
+
   return (
     <div className="bg-black-100 mt-12 rounded-[20px]">
       <div
