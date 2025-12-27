@@ -40,15 +40,15 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "Justin Matthew Hodges — Senior Software Engineer",
-    fullName: "Justin Matthew Hodges",
-    email: "justinmatthewhodges@gmail.com",
+    title: "Yusif Heydarov — Technical Team Lead",
+    fullName: "Yusif Heydarov",
+    email: "yusifheydarov475@gmail.com",
   },
   hero: {
-    name: "Justin Matthew Hodges",
+    name: "Yusif Heydarov",
     p: [
-      "Senior software engineer focused on backend systems",
-      "Python, Django, FastAPI, and cloud deployments",
+      "Senior software engineer and technical team lead",
+      "Python backend, system design, and cloud infrastructure",
     ],
   },
   contact: {
@@ -70,12 +70,13 @@ export const config: TConfig = {
     about: {
       p: "Profile",
       h2: "Summary.",
-      content: `Senior software engineer specializing in backend development and scalable
-      web applications, with 10 years of experience building high-performance
-      systems using Python, Django, FastAPI, and modern JavaScript/TypeScript.
-      Experienced in API architecture, cloud deployments, asynchronous
-      processing, database design, and CI/CD automation. Committed to clean
-      architecture, performance optimization, and reliable delivery.`,
+      content: `Senior software engineer and technical team lead with 9+ years of
+      experience in Python backend development using Django, Flask, and
+      FastAPI. Builds REST APIs, microservices, and scalable systems on AWS with
+      Docker, Kubernetes, Nginx, and CI/CD automation. Experienced in Celery
+      async processing, React/Node.js integration, and mentoring engineers.
+      Education: Bachelor's degree in Information Technology, National
+      University of Singapore (2015-2019).`,
     },
     experience: {
       p: "Professional background",

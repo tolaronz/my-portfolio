@@ -19,12 +19,15 @@ import {
   tailwind,
   nodejs,
   mongodb,
+  html,
+  css,
   python,
   fastapi,
   postgres,
   aws,
   git,
   docker,
+  flask,
   starbucks,
   tesla,
   shopify,
@@ -50,19 +53,19 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Django/Python Developer",
+    title: "Technical Team Lead",
     icon: web,
   },
   {
-    title: "Backend API Engineer",
+    title: "Backend Architecture & APIs",
     icon: mobile,
   },
   {
-    title: "Automation & Data Pipelines",
+    title: "Full-Stack Integration (React/Node.js)",
     icon: backend,
   },
   {
-    title: "Cloud & DevOps",
+    title: "Cloud & DevOps (AWS, Docker, K8s)",
     icon: creator,
   },
 ];
@@ -77,89 +80,98 @@ const technologies: TTechnology[] = [
     icon: django,
   },
   {
+    name: "Flask",
+    icon: flask,
+  },
+  {
     name: "FastAPI",
     icon: fastapi,
-  },
-  {
-    name: "PostgreSQL",
-    icon: postgres,
-  },
-  {
-    name: "AWS",
-    icon: aws,
   },
   {
     name: "Node JS",
     icon: nodejs,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "React JS",
+    icon: reactjs,
   },
   {
     name: "TypeScript",
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "HTML",
+    icon: html,
+  },
+  {
+    name: "CSS",
+    icon: css,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgres,
   },
   {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "git",
-    icon: git,
+    name: "AWS",
+    icon: aws,
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
+  },
+  {
+    name: "Git",
+    icon: git,
   },
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "Senior Python Developer (Django & FastAPI)",
-    companyName: "LoneStar Tech",
+    title: "Technical Team Lead",
+    companyName: "Singsys Pte. Ltd",
     icon: starbucks,
     iconBg: "#383E56",
     date: "09/2022 - 04/2025",
     points: [
-      "Led backend engineering with Django, DRF, Celery, and PostgreSQL for enterprise systems.",
-      "Introduced FastAPI microservices, reducing API latency by 50%.",
-      "Designed modular architectures and reusable components across projects.",
-      "Implemented OAuth2, RBAC, and secure API gateways.",
-      "Optimized query performance with indexing and caching via Redis and Memcached.",
-      "Migrated on-prem systems to AWS with Dockerized, resilient deployments.",
-      "Mentored junior developers and established coding standards.",
+      "Led a cross-functional engineering team delivering mission-critical backend systems.",
+      "Owned backend architecture, CI/CD pipelines, AWS infrastructure, Docker/Kubernetes, and Nginx configuration.",
+      "Ensured high-performance, secure, and reliable production systems.",
+      "Partnered with stakeholders to translate business requirements into scalable solutions.",
+      "Mentored engineers, contributed to hiring, and established team best practices.",
     ],
   },
   {
-    title: "Full-Stack Web Developer (Python & JavaScript)",
-    companyName: "RedRiver Solutions",
+    title: "Senior Full-Stack Engineer",
+    companyName: "Singsys Pte. Ltd",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "07/2020 - 03/2022",
+    date: "08/2020 - 09/2022",
     points: [
-      "Built scalable REST APIs using Django/DRF for 50k+ users.",
-      "Implemented JWT/OAuth2 authentication with role-based access control.",
-      "Improved API performance using Redis caching and database optimization.",
-      "Migrated legacy systems to Django microservices.",
-      "Collaborated cross-functionally in code reviews and sprint planning.",
+      "Designed and implemented scalable backend systems, microservices, and REST APIs.",
+      "Integrated Celery for asynchronous tasks and connected frontend with React/Node.js.",
+      "Managed deployments on AWS, configured Nginx, and orchestrated Docker/Kubernetes.",
+      "Built and maintained CI/CD pipelines and automated testing processes.",
+      "Mentored junior engineers and conducted technical code reviews.",
     ],
   },
   {
-    title: "Python Developer",
-    companyName: "Gulf Coast Labs",
+    title: "Junior Python Developer",
+    companyName: "Singsys Pte. Ltd",
     icon: shopify,
     iconBg: "#383E56",
-    date: "06/2018 - 11/2019",
+    date: "07/2019 - 08/2020",
     points: [
-      "Automated internal workflows, reducing manual effort by 60%.",
-      "Built Django dashboards and APIs for analytics and reporting.",
-      "Integrated third-party services and internal application components.",
-      "Improved operational efficiency through backend automation.",
+      "Developed backend services in Python and frontend components with React/JavaScript.",
+      "Built and consumed REST APIs, supported databases, and assisted in CI/CD deployments.",
+      "Participated in code reviews, debugging, and feature delivery.",
     ],
   },
 ];
