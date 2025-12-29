@@ -23,6 +23,7 @@ import aws from "./tech/aws.svg";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import ml from "./tech/ml.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -58,6 +59,7 @@ export {
   reactjs,
   tailwind,
   typescript,
+  ml,
   meta,
   shopify,
   starbucks,

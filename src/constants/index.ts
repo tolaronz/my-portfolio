@@ -19,6 +19,7 @@ import {
   mongodb,
   python,
   fastapi,
+  ml,
   postgres,
   aws,
   docker,
@@ -77,6 +78,10 @@ const technologies: TTechnology[] = [
   {
     name: "FastAPI",
     icon: fastapi,
+  },
+  {
+    name: "ML",
+    icon: ml,
   },
   {
     name: "React JS",
