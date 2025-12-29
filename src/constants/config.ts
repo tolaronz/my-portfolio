@@ -47,7 +47,7 @@ export const config: TConfig = {
     name: "Yusif Heydarov",
     p: [
       "Senior software engineer and technical team lead",
-      "Python backend, ML systems, and cloud infrastructure · Baku, Azerbaijan",
+      "Python backend, ML systems, and cloud infrastructure",
     ],
   },
   contact: {
