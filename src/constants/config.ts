@@ -34,7 +34,6 @@ type TConfig = {
     about: Required<TSection>;
     experience: TSection;
     feedbacks: TSection;
-    works: Required<TSection>;
   };
 };
 
@@ -48,7 +47,7 @@ export const config: TConfig = {
     name: "Yusif Heydarov",
     p: [
       "Senior software engineer and technical team lead",
-      "Python backend, system design, and cloud infrastructure",
+      "Python backend, ML systems, and cloud infrastructure · Baku, Azerbaijan",
     ],
   },
   contact: {
@@ -70,11 +69,14 @@ export const config: TConfig = {
     about: {
       p: "Profile",
       h2: "Summary.",
-      content: `Senior software engineer and technical team lead with 9+ years of
-      experience in Python backend development using Django, Flask, and
-      FastAPI. Builds REST APIs, microservices, and scalable systems on AWS with
-      Docker, Kubernetes, Nginx, and CI/CD automation. Experienced in Celery
-      async processing, React/Node.js integration, and mentoring engineers.`,
+      content: `Senior software engineer and technical team lead with 10+ years
+      of experience in Python backend development using Django, Flask, and
+      FastAPI, building REST APIs, microservices, and deploying scalable systems
+      on AWS, Docker, Kubernetes, and Nginx. Skilled in designing and deploying
+      ML models with TensorFlow, PyTorch, and scikit-learn, CI/CD automation,
+      Celery tasks, and full-stack integration with React/Node.js. Proven track
+      record in leading teams, mentoring engineers, and delivering high-performance,
+      production-ready software and ML solutions.`,
     },
     experience: {
       p: "Professional background",
@@ -83,15 +85,6 @@ export const config: TConfig = {
     feedbacks: {
       p: "What others say",
       h2: "Testimonials.",
-    },
-    works: {
-      p: "My work",
-      h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
     },
   },
 };
