@@ -39,15 +39,15 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "Yusif Heydarov — Technical Team Lead",
+    title: "Yusif Heydarov — Senior Software Engineer",
     fullName: "Yusif Heydarov",
     email: "yusifheydarov475@gmail.com",
   },
   hero: {
     name: "Yusif Heydarov",
     p: [
-      "Senior software engineer and technical team lead",
-      "Python backend, ML systems, and cloud infrastructure",
+      "Senior software engineer focused on Python backend systems",
+      "Cloud-native microservices, ML pipelines, and DevOps",
     ],
   },
   contact: {
@@ -69,14 +69,13 @@ export const config: TConfig = {
     about: {
       p: "Profile",
       h2: "Summary.",
-      content: `Senior software engineer and technical team lead with 10+ years
-      of experience in Python backend development using Django, Flask, and
-      FastAPI, building REST APIs, microservices, and deploying scalable systems
-      on AWS, Docker, Kubernetes, and Nginx. Skilled in designing and deploying
-      ML models with TensorFlow, PyTorch, and scikit-learn, CI/CD automation,
-      Celery tasks, and full-stack integration with React/Node.js. Proven track
-      record in leading teams, mentoring engineers, and delivering high-performance,
-      production-ready software and ML solutions.`,
+      content: `Senior Software Engineer with 10+ years of experience building
+      scalable, cloud-native backend systems using Python. Strong expertise in
+      RESTful APIs and microservices with Django and FastAPI, supported by
+      PostgreSQL, Redis, and asynchronous processing. Experienced in deploying
+      and operating production systems with Docker, Kubernetes, AWS, and CI/CD
+      pipelines, with a focus on backend architecture, performance, and
+      reliability.`,
     },
     experience: {
       p: "Professional background",

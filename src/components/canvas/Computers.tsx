@@ -55,32 +55,29 @@ const ComputersCanvas = () => {
 
   return (
     <>
-      {isMobile ? (
-        <></>
-      ) : (
-        <Canvas
-          frameloop="demand"
-          shadows
-          dpr={[1, 2]}
-          camera={{ position: [20, 3, 5], fov: 25 }}
-          gl={{ preserveDrawingBuffer: true, alpha: true }}
-          onCreated={({ gl }) => {
-            // Ensure the canvas stays transparent so the hero background shows.
-            gl.setClearColor(0x000000, 0);
-          }}
-        >
-          <Suspense fallback={<CanvasLoader />}>
-            <OrbitControls
-              enablePan={false}
-              enableZoom={false}
-              maxPolarAngle={Math.PI / 2}
-              minPolarAngle={Math.PI / 2}
-            />
-            <Computers isMobile={isMobile} />
-          </Suspense>
-          <Preload all />
-        </Canvas>
-      )}
+      <Canvas
+        className="h-full w-full"
+        frameloop="demand"
+        shadows
+        dpr={[1, 2]}
+        camera={{ position: [20, 3, 5], fov: 25 }}
+        gl={{ preserveDrawingBuffer: true, alpha: true }}
+        onCreated={({ gl }) => {
+          // Ensure the canvas stays transparent so the hero background shows.
+          gl.setClearColor(0x000000, 0);
+        }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            enablePan={false}
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+          <Computers isMobile={isMobile} />
+        </Suspense>
+        <Preload all />
+      </Canvas>
     </>
   );
 };
