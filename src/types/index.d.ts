@@ -11,6 +11,18 @@ export type TExperience = {
   points: string[];
 } & Required<Omit<TCommonProps, "name">>;
 
+export type TEducation = {
+  schoolName: string;
+  degree: string;
+  location: string;
+  iconBg: string;
+  date: string;
+  points: string[];
+  summary?: string;
+  image?: string;
+  variant?: "degree" | "image";
+} & Required<Pick<TCommonProps, "icon">>;
+
 export type TTestimonial = {
   testimonial: string;
   designation: string;

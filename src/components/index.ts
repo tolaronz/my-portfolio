@@ -10,6 +10,7 @@ import Navbar from "./layout/Navbar";
 import About from "./sections/About";
 import Tech from "./sections/Tech";
 import Experience from "./sections/Experience";
+import Education from "./sections/Education";
 import Feedbacks from "./sections/Feedbacks";
 import Contact from "./sections/Contact";
 import CanvasLoader from "./layout/Loader";
@@ -20,6 +21,7 @@ export {
   About,
   Tech,
   Experience,
+  Education,
   Feedbacks,
   Contact,
   CanvasLoader,

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../../constants/styles";
 import { ComputersCanvas } from "../canvas";
+import { avatar } from "../../assets";
 import { config } from "../../constants/config";
 
 const Hero = () => {
@@ -15,7 +16,18 @@ const Hero = () => {
           <div className="violet-gradient h-40 w-1 sm:h-80" />
         </div>
 
-        <div>
+        <div className="flex flex-col gap-6 md:flex-row md:items-center">
+          <div className="flex items-center">
+            <div className="ml-6 mt-2 h-48 w-48 overflow-hidden rounded-full border-2 border-[#915EFF]/70 bg-[#1d1836] shadow-lg sm:h-56 sm:w-56">
+              <img
+                src={avatar}
+                alt={`${config.hero.name} avatar`}
+                className="h-full w-full object-cover object-[50%_5%]"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">{config.hero.name}</span>
           </h1>

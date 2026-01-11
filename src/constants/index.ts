@@ -3,6 +3,7 @@ import type {
   TService,
   TTechnology,
   TExperience,
+  TEducation,
   TTestimonial,
 } from "../types";
 
@@ -26,6 +27,11 @@ import {
   docker,
   starbucks,
   tesla,
+  nusAvatar,
+  nusImg1,
+  nusImg2,
+  nusImg3,
+  nusImg4,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -36,6 +42,10 @@ export const navLinks: TNavLink[] = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "education",
+    title: "Education",
   },
   {
     id: "tech",
@@ -154,6 +164,65 @@ const experiences: TExperience[] = [
   },
 ];
 
+const education: TEducation[] = [
+  {
+    variant: "degree",
+    schoolName: "National University of Singapore",
+    degree: "Bachelor's degree in Computer Science",
+    location: "Singapore",
+    icon: nusAvatar,
+    iconBg: "#1d1836",
+    date: "08/2011 - 07/2015",
+    points: [],
+    summary:
+      "Studied core computer science foundations with a focus on software engineering and systems.",
+  },
+  {
+    variant: "image",
+    schoolName: "National University of Singapore",
+    degree: "",
+    location: "",
+    icon: nusAvatar,
+    iconBg: "#1d1836",
+    date: "",
+    points: [],
+    image: nusImg1,
+  },
+  {
+    variant: "image",
+    schoolName: "National University of Singapore",
+    degree: "",
+    location: "",
+    icon: nusAvatar,
+    iconBg: "#1d1836",
+    date: "",
+    points: [],
+    image: nusImg2,
+  },
+  {
+    variant: "image",
+    schoolName: "National University of Singapore",
+    degree: "",
+    location: "",
+    icon: nusAvatar,
+    iconBg: "#1d1836",
+    date: "",
+    points: [],
+    image: nusImg3,
+  },
+  {
+    variant: "image",
+    schoolName: "National University of Singapore",
+    degree: "",
+    location: "",
+    icon: nusAvatar,
+    iconBg: "#1d1836",
+    date: "",
+    points: [],
+    image: nusImg4,
+  },
+];
+
 const testimonials: TTestimonial[] = [];
 
-export { services, technologies, experiences, testimonials };
+export { services, technologies, experiences, education, testimonials };

@@ -33,6 +33,12 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import nusAvatar from "./nus-avatar.png";
+import nusImg1 from "./nus-img1.png";
+import nusImg2 from "./nus-img2.png";
+import nusImg3 from "./nus-img3.png";
+import nusImg4 from "./nus-img4.png";
+import avatar from "./avatar.png";
 
 export {
   logo,
@@ -67,4 +73,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  nusAvatar,
+  nusImg1,
+  nusImg2,
+  nusImg3,
+  nusImg4,
+  avatar,
 };
